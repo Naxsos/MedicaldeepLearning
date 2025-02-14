@@ -1,2 +1,4 @@
 .venv
 .env
+DL_for_HIN_Chest_X_Ray/HIN_archive
+.DS_Store
