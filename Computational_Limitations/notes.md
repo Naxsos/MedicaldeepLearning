@@ -26,3 +26,23 @@ https://arxiv.org/pdf/2007.05558
 https://medium.com/walmartglobaltech/computational-complexity-of-deep-learning-a-birds-eye-view-2250b7c098a1
 
 - idea: Test GPU vs CPU?
+
+
+
+
+
+
+----
+
+
+
+
+
+
+95831 images
+
+Ganz normales Laden, Code Beispiel, 16 Byte pro Pixel, 272 Byte für Datenstruktur
+-> np.float64 hat schonmal 8 Byte
+
+
+Loading image normally, as expected, the numpy array containing the values for the pixels has about 1MB. However, normalizing necessary -> np.float64 (8 Bytes)
