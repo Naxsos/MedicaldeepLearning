@@ -1109,6 +1109,25 @@ files = [
 all = ["flake8 (>=7.1.1)", "mypy (>=1.11.2)", "pytest (>=8.3.2)", "ruff (>=0.6.2)"]
 
 [[package]]
+name = "image-classifiers"
+version = "1.0.0"
+description = "Image classification models. Keras."
+optional = false
+python-versions = ">=3.0.0"
+groups = ["main"]
+markers = "python_version <= \"3.11\" or python_version >= \"3.12\""
+files = [
+    {file = "image_classifiers-1.0.0-py3-none-any.whl", hash = "sha256:6030bdfd1bc334a4e9d018e8962fbe9c8deba3257dc21c237032ff1590da2b98"},
+    {file = "image_classifiers-1.0.0.tar.gz", hash = "sha256:62022c0ff919d8ba5e3ffb7958b7db916e102e3e65c47c71cf8717ced43c0e4c"},
+]
+
+[package.dependencies]
+keras-applications = ">=1.0.7,<=1.0.8"
+
+[package.extras]
+tests = ["pytest", "scikit-image"]
+
+[[package]]
 name = "ipykernel"
 version = "6.29.5"
 description = "IPython Kernel for Jupyter"
@@ -1658,6 +1677,26 @@ numpy = "*"
 optree = "*"
 packaging = "*"
 rich = "*"
+
+[[package]]
+name = "keras-applications"
+version = "1.0.8"
+description = "Reference implementations of popular deep learning models"
+optional = false
+python-versions = "*"
+groups = ["main"]
+markers = "python_version <= \"3.11\" or python_version >= \"3.12\""
+files = [
+    {file = "Keras_Applications-1.0.8-py3-none-any.whl", hash = "sha256:df4323692b8c1174af821bf906f1e442e63fa7589bf0f1230a0b6bdc5a810c95"},
+    {file = "Keras_Applications-1.0.8.tar.gz", hash = "sha256:5579f9a12bcde9748f4a12233925a59b93b73ae6947409ff34aa2ba258189fe5"},
+]
+
+[package.dependencies]
+h5py = "*"
+numpy = ">=1.9.1"
+
+[package.extras]
+tests = ["pytest", "pytest-cov", "pytest-pep8", "pytest-xdist"]
 
 [[package]]
 name = "kiwisolver"
@@ -2255,6 +2294,27 @@ numpy = [
     {version = ">=1.21.2", markers = "platform_system != \"Darwin\" and python_version >= \"3.10\" and python_version < \"3.11\""},
     {version = ">=1.26.0", markers = "python_version >= \"3.12\""},
 ]
+
+[[package]]
+name = "ops"
+version = "2.19.4"
+description = "The Python library behind great charms"
+optional = false
+python-versions = ">=3.8"
+groups = ["main"]
+markers = "python_version <= \"3.11\" or python_version >= \"3.12\""
+files = [
+    {file = "ops-2.19.4-py3-none-any.whl", hash = "sha256:ca23c62441576e0e25a33eb8e3c6c3583b77c5954913f7a682b3b002b0858519"},
+    {file = "ops-2.19.4.tar.gz", hash = "sha256:3d6ef474341abaa86ef9ed7dc21e6292a1d690546ec830d4458d56f6eb4af350"},
+]
+
+[package.dependencies]
+PyYAML = "==6.*"
+websocket-client = "==1.*"
+
+[package.extras]
+docs = ["canonical-sphinx-extensions", "furo", "linkify-it-py", "myst-parser", "pyspelling", "sphinx (>=8.0.0,<8.1.0)", "sphinx-autobuild", "sphinx-copybutton", "sphinx-design", "sphinx-notfound-page", "sphinx-tabs", "sphinxcontrib-jquery", "sphinxext-opengraph"]
+testing = ["ops-scenario (==7.19.4)"]
 
 [[package]]
 name = "opt-einsum"
@@ -4503,4 +4563,4 @@ files = [
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.10"
-content-hash = "16a3294efc93643df338c1fc7990c177f55aa7636d1e8e93ff3f7a75f972b28d"
+content-hash = "822ce3be3f2ce9325ed95af1eb7d9be260a51bd5fe9cd45f0ebc432f92239060"

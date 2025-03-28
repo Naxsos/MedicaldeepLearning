@@ -25,6 +25,8 @@ dependencies = [
     "pydot (>=3.0.4,<4.0.0)",
     "tensorflow-hub (>=0.16.1,<0.17.0)",
     "transformers (>=4.49.0,<5.0.0)",
+    "ops (>=2.19.4,<3.0.0)",
+    "image-classifiers (>=1.0.0,<2.0.0)",
 ]
 
 
